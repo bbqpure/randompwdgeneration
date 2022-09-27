@@ -53,7 +53,7 @@ public class randomPwdGeneration {
 
 
     public static void main(String[] args) {
-        int len = 8;
+        int len = 10;
         int times = 10;
         for (int i = 0; i < times; i++) {
             System.out.println(generatePwd(len));
