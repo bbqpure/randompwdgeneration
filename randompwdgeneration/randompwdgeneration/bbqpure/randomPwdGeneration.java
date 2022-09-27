@@ -41,8 +41,7 @@ public class randomPwdGeneration {
         SecureRandom random = new SecureRandom();
         int len = s.length();
         char[] chars = s.toCharArray();
-        char temp = 0;
-        System.out.println(temp);
+        char temp;
         for (int i = 0; i < len; i++) {
             int index = random.nextInt(len);
             temp = chars[i];
@@ -54,11 +53,10 @@ public class randomPwdGeneration {
 
 
     public static void main(String[] args) {
-
-        int len = 10;
-        int times = 5;
-        for(int i=0;i<times;i++){
-            System.out.print(generatePwd(len));
+        int len = 8;
+        int times = 10;
+        for (int i = 0; i < times; i++) {
+            System.out.println(generatePwd(len));
         }
 
 
